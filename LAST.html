@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            /* transform: ; */
+            height: 150px;
+            width: 150px;
+        }
+
+        table:hover {
+            background-color: red;
+            color: white;
+            transform: scale(1.5, 1);
+        }
+
+        /* 206 */
+        ol {
+            float: right;
+        }
+
+        /* p{
+            width: 80%;
+            float: left;
+        } */
+        @media screen and (max-width:380px) {
+            ol {
+                float: none;
+                /* margin-top:0px; */
+
+            }
+        }
+
+        /* 228 */
+        /* div {
+            background-color: red;
+        } */
+
+        p {
+            width: 20%;
+            animation-name: advertise;
+            animation-duration: 5s;
+            animation-delay: 1s;
+            animation-direction: normal;
+            animation-iteration-count: infinite;
+            color: black;
+            margin: 150px ;
+
+        }
+
+        @keyframes advertise {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 299-->
+    <!-- <table border="2">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+    </table> -->
+
+    <!-- 206 -->
+    <!-- <ol>
+        <li>ABC</li>
+        <li>EFG</li>
+        <li>HIJ</li>
+        <li>KLM</li>
+        <li>NOP</li>
+     </ol>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ipsum sint dolorem asperiores reprehenderit unde iure! Temporibus, harum velit. Ex voluptas reprehenderit fugit vel quas aut, culpa odit cupiditate quibusdam? 
+     </p> -->
+    <div>
+        <p>THIS IS ADVERTISE</p>
+    </div>
+</body>
+
+</html>
