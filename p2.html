@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS STYLE IMAGES
+    1.Thumbnail IMAGES
+    2.ROunded IMAGES
+    3.Responsive IMAGES
+    4.Transparent IMAGES -->
+
+    <style>
+        /* Thumbnail image */
+        img.i1{
+            border:2px solid red;
+            border-radius: 20px;
+            padding: 50px;
+            width:150px
+        }
+        /* Rounded image */
+        img.i2{
+            border:2px solid red;
+            border-radius: 300px;
+            /* To make perfect rounded write border-radius:50%; */
+            /* border-radius:  alternatives: border-top-right-radius
+            border-top-left-radius
+            border-bottom-right-radius
+            border-top-left-radius */
+            padding: 50px;
+            width:150px
+        }
+          /* Transparent image */
+        img.i3{
+            border:2px solid red;
+            border-radius: 20px;
+            opacity:0.5;
+            /* opacity value=0.0 to 1.0 */
+            padding: 50px;
+            width:150px
+        }
+          /* Responsive image */
+          #id1
+          {
+               max-width:auto;
+               height:auto
+          }
+    </style>
+</head>
+<body>
+    <img src="c:\Users\LJENG\Pictures\Saved Pictures\download (1).jfif" class="i1">
+    <img src="c:\Users\LJENG\Pictures\Saved Pictures\download (2).jfif" class="i2">
+    <img src="c:\Users\LJENG\Pictures\Saved Pictures\download.jfif" class="i3">
+    <img src="c:\Users\LJENG\Pictures\Saved Pictures\download (3).jfif" id="id1" width="500" height="300"> 
+    <!-- Another way of applying multiple functionality using id (to access # is  must) -->
+</body>
+</html>

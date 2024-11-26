@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS var() function</title>
+    <style>
+        :root{
+            /* to assign any variable syntax:  --variablename:value */
+            /* root for global variable  */
+            --blue:#123aEE;
+            --white:#FFFFFF;
+            --fontchange:30px
+        }
+        h1{
+            --blue:#9aaa0a; /*Local variable*/
+            color:var(--blue)
+        }
+        P{
+            color:var(--white);
+            background-color:var(--blue);
+            font-size:var(--fontchange);
+        }
+    </style>
+</head>
+<body>
+    <h1>This is an Example</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem voluptas itaque recusandae consectetur quo. Eligendi possimus totam molestiae? Libero cupiditate necessitatibus aut consectetur voluptate! Porro quaerat libero ullam vero fugit asperiores reprehenderit atque consectetur fugiat perspiciatis excepturi, doloremque, accusantium quia.</p>
+</body>
+</html>

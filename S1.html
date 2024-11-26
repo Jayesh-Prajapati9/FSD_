@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 2-D Transforms</title>
+    <style>
+        div{
+            width:300px;
+            height:110px;
+            background-color: yellow;
+        }
+        .c1{
+            width:90px;
+            height:70px;
+            border-radius: 350px;
+            background-color: aquamarine;
+        }
+        .c2{
+            width:300px;
+            height:100px;
+            background-color:silver;
+        }
+        .c3{
+            width:300px;
+            height:100px;
+            background-color:mediumseagreen;
+        }
+        div:hover{
+            transform:translate(50px,100px);
+            /* transform: moves an element from its current position here 50-width,100-height*/
+        }
+        .c1:hover{
+            transform:rotate(20deg);
+            /* transform:rotate(-20deg); rotates anticlockwise */
+        }
+        .c2:hover{
+            transform: scale(2,3);
+            /* increase /decrease the size of element */
+            /* scale(2,1) /scale(2) used for width double and height same */
+        }
+        .c3:hover{
+            transform:skew(20deg,10deg)
+            /* rotates in the shape of parrallelogram  */
+            
+        }
+    </style>
+</head>
+<body>
+      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius repellat architecto quasi facere nobis. Ex, ab dolorem officiis minima eaque cupiditate adipisci optio doloribus, placeat expedita voluptates eius impedit eveniet.</div>
+      <br>
+      <div class="c1">Shrey Rakholiya</div>
+      <br>
+      <div class="c2">Scale Wallah</div>
+      <br>
+      <div class="c3">Skew Operation</div>
+</body>
+</html>

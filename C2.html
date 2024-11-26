@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        #C1{
+             width:100px;
+             height:100px;
+             animation-name:example;
+             animation-duration:5s;
+             animation-iteration-count:infinite;
+             animation-delay:1s;
+             animation-direction: normal; 
+        }
+        @keyframes example{
+           0%{background-color:red; transform:translate(0px,0px)}
+           25%{background-color:yellow; transform:translate(200px,0px)}
+           50%{background-color: green; transform:translate(200px,200px)}
+           75%{background-color: blue;  transform:translate(0px,200px)}
+           100%{background-color:red  ; transform:translate(0px,0px)}
+        }
+    </style>
+</head>
+<body>
+    <div id="C1"></div>
+</body>
+</html>

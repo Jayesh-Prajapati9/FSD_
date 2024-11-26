@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .class1{
+        /* doesnot have any effect of top bottom left right */
+        position:static;
+        border:3px solid red;
+        /* top:500px;
+        left:500px;
+        does not have ANY EFFECT hence known as static */
+       }
+       .class2{
+        position:relative;
+        border:3px solid red;
+        top:5px ;
+        left:30px;
+        /* gets adjusted by left,bottom,top,bottom */
+       }
+       .class3{
+        position:absolute;
+        top:15px ;
+        left:20px;
+        /* top,left,bottom,right in absolute initiates from the windows screen 
+        meanwhile relative starts from the previous printed text; */
+       }
+        
+       .class4 p{
+         position: fixed;
+         border:1px;
+         /* fixed is used to set the position of the element permanently fixed ie no affected to scrolling */
+       }
+    </style>
+</head>
+<body>
+    <!-- css marging and padding -->
+    <p style="margin:100px;
+              border:5px solid red;
+              padding: 20px 100px 20px 125px">
+                <!-- top right bottom left -->
+                 <!-- same applies for margin & if 
+                 margin:10px(all 4)
+                 margin: 10px      20px
+                        top/bottom  left/right -->
+          Hello World
+     </p>
+     <!-- CSS POSITION -->
+      <!-- 1.Static Positioning
+      2.Relative Positioning
+      3.Absolute Positioning
+      4.fixed Positioning -->
+       
+      <!-- Static Positioning -->
+       <h2>Position Static</h2>
+       <div class="class1">
+        This  div elemnt has static position
+       </div>
+       <!-- Relative Positioning -->
+       <h2>Relative Positing</h2>
+       <div class="class2">
+          Full stack Development
+       </div>
+       <!-- Absolute Positioning -->
+        <h2>Absolute Positioning</h2>
+        <div class="class3">
+            Kem cho tame
+        </div>
+        <!-- Fixed Positioning -->
+         <h2>Fixed Positioning</h2>
+        <div class="class4">
+             <p>lorem10015</p>
+             <pre>lorem100</pre>
+            </div>
+
+</body>
+</html>

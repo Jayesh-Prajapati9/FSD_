@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination</title>
+    <style>
+        .pagination{
+            display:inline-block;
+        }
+        .pagination a{
+             color:black;
+             float:left;
+             margin:2px;
+             padding:8px 16px;
+             text-decoration: none;
+             border: 5px double black;
+             border-radius: 10px;
+        }
+        .pagination a:hover{
+            background-image: linear-gradient(yellow,aqua,orange);
+        }      
+       .act .active{
+          background-color: blue;
+          color:aliceblue;
+          border-radius:3px;
+       }
+       .act a:hover:not(.active)
+       {
+        background-color: green;
+        border-radius: 3px;
+       }
+ 
+    </style>
+</head>
+<body>
+    <h2>Pagination</h2>
+    <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">&raquo;</a>
+    </div>
+    <div class="act">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#" class="active">2</a>
+        <a href="#">3</a>
+        <a href="#">&raquo;</a>
+    </div>
+</body>
+</html>

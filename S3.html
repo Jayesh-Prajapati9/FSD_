@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examples</title>
+    <style>
+        #grad1{
+            height:200px;
+            border-radius: 50%;
+            background-image:conic-gradient(from 90deg,red,yellow,green);
+        }
+        #grad2{
+            height:200px;
+            border-radius: 50%;
+            background-image:conic-gradient(at 60%45%,aqua,magenta,orange);
+            /* to move the position of center */
+        }
+        #grad3{
+            height:200px;
+            border-radius: 50%;
+            background-image:conic-gradient(red 90deg,yellow 90deg 180deg,green 180deg 270deg,blue 270deg );
+        }
+    </style>
+</head>
+<body>
+    <div id="grad1"></div>
+    <div id="grad2"></div>
+    <div id="grad3"></div>
+</body>
+</html>

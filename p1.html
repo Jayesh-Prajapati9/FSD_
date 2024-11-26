@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no,maximum-scale=0.5,minimum scale=0.1">
+    <!-- initial-scale : Zoom level
+    user-scalable : Permission for zoom
+    maximum-scale : Zoom out between [0.0-10.0]
+    minimum-scale : Zoom in between [0.0-10.0]-->
+
+    <!-- CSS MEDIA QUERIES -->
+    <!-- syntax:   @media not/only mediatype and (expression){         //code content    } -->
+     <!-- expression: max-width/min-width or orientation:landscape/orientation:portraite -->
+    <style>
+        body{
+            background-color: lightgreen;
+        }
+        @media only screen and (max-width:500px) {
+            body{
+                background-color:  yellow;
+            }
+        }
+         /* only max-width or not min-width : green-yellow
+         only min-width or not max-width: yellow-green */
+         /* similar working for orientation */
+         
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!-- UNIT5 -->
+    <h1>This is an example of meta tag</h1>
+    <!-- ctrl+shift+C to see the inspect -->
+
+    
+
+</body>
+</html>

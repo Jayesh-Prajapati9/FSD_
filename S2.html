@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Gradient</title>
+   <style>
+    #grad1{
+        height:100px;
+        background-image:linear-gradient(to top,red,green,blue)
+        /* to left,to right,to top,to bottom
+        to left bottom,to right bottom
+        to left top,to right top */
+    }
+    #grad2{
+        height: 150px; 
+        background-image:linear-gradient(to top,violet,indigo,blue,green,yellow,orange,red)
+    }
+    #grad3{
+        height:150px;
+        background-image:repeating-linear-gradient(to top,red,yellow 10%,green 30%)
+    } 
+    #grad4{
+        height:100px;
+        background-image:radial-gradient(red,green,blue);
+        /* background-image:radial-gradient(red 5%,yellow 15%,blue 60%);
+        background-image:radial-gradient(circle,red,green,blue);
+        background-image:repeating-radial-gradient(circle,red,green 10%,blue 15%) */
+    }
+    #grad5{
+       height:300px;
+        border-radius:50%;
+        background-image:radial-gradient(aqua,pink,yellow);
+        /* background-image:radial-gradient(aqua 45deg,pink 90deg,yellow 210deg);
+        background-image:repeating-radial-gradient(blue 10%,pink 20%,yellow 30%); */
+    }
+   </style>
+</head>
+<body>
+   <div id="grad1">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat rerum reprehenderit accusantium. Sequi eius, nemo, corrupti placeat officia harum omnis odio fugit eaque impedit quasi laboriosam asperiores libero! Sit fuga, consectetur minima reprehenderit nostrum unde nulla facilis. 
+   </div> 
+   <br>
+   <div id="grad2" align="center">
+    Rainbow
+   </div>
+   <br>
+   <div id="grad3" align="center">
+    Repeating Gradient
+   </div>
+   <br>
+   <div id="grad4" align="center">
+    Repeating Gradient
+   </div>
+   <br>
+   <div id="grad5" align="center">
+    Conic Gradient
+   </div>
+</body>
+</html>
